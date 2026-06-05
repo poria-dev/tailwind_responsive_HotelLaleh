@@ -1,0 +1,294 @@
+@import "tailwindcss";
+
+
+@layer base {
+    li {
+        font-family: font3;
+    }
+}
+
+
+@layer components {
+
+    .click {
+        @apply font-[font1] rounded-xl px-3 py-1 shadow bg-black text-fav flex justify-center items-center hover:scale-105 duration-300
+    }
+
+    /* .map-svg{
+        @apply rounded-2xl overflow-hidden relative bg-slate-100 *:nth-[1]:object-cover *:nth-[1]:w-full *:nth-[1]:flex *:nth-[1]:justify-center *:nth-[1]:opacity-50 *:nth-[2]:right-0 *:nth-[2]:flex-wrap *:nth-[2]:*:w-full *:nth-[2]:*:flex-wrap *:nth-[2]:*:flex *:nth-[2]:*:my-2 *:nth-[2]:*:nth-[1]:font-[font2] *:nth-[2]:*:nth-[1]:text-xl *:nth-[2]:*:nth-[1]:lg:text-2xl *:nth-[2]:*:nth-[1]:px-4 *:nth-[2]:*:nth-[1]:pt-4 *:nth-[2]:*:nth-[2]:text-4xl *:nth-[2]:*:nth-[2]:lg:text-5xl *:nth-[2]:*:nth-[2]:font-[4] *:nth-[2]:*:nth-[2]:px-4 *:nth-[2]:*:nth-[2]:my-5 *:nth-[2]:*:nth-[3]:flex *:nth-[2]:*:nth-[3]:px-4 *:nth-[2]:*:nth-[3]:*:w-5 *:nth-[2]:*:nth-[3]:*:h-5 *:nth-[2]:*:nth-[3]:*:bg-[#dac070] *:nth-[2]:*:nth-[3]:*:rounded-full *:nth-[2]:*:nth-[3]:*:mx-1 *:nth-[2]:*:nth-[3]:*:my-6 
+    } */
+
+}
+
+
+@layer utilities {
+
+    .row {
+        @apply flex flex-wrap w-full
+    }
+
+}
+
+@theme {
+
+    --color-fav: #AC883A;
+}
+
+
+@font-face {
+    font-family: font1;
+    src: url(font/Farsi-Digits/Samim-FD.ttf);
+}
+
+@font-face {
+    font-family: font2;
+    src: url(font/Farsi-Digits-Without-Latin/Samim-Bold-FD-WOL.woff2);
+}
+
+@font-face {
+    font-family: font3;
+    src: url(font/Samim-Bold.woff);
+}
+
+@font-face {
+    font-family: font4;
+    src: url(font/B_NAZANIN/B-NAZANIN.TTF);
+}
+
+@font-face {
+    font-family: font5;
+    src: url(font/IranNastaliq/IranNastaliq.ttf);
+}
+
+
+
+
+
+@keyframes sliderone {
+
+    0% {
+        right: 0;
+    }
+
+    45% {
+        right: 0;
+
+    }
+
+    47% {
+        right: -100%;
+    }
+
+    95% {
+        right: -100%;
+
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+
+@keyframes opa {
+    0% {
+        opacity: 0;
+    }
+
+    17% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    43% {
+        opacity: 1;
+    }
+
+    44% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes opa2 {
+    0% {
+        opacity: 1;
+    }
+
+    17% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    43% {
+        opacity: 1;
+    }
+
+    44% {
+        opacity: 1;
+    }
+
+    46% {
+        opacity: 0;
+    }
+
+    55% {
+        opacity: 0;
+    }
+
+    57% {
+        opacity: 1;
+    }
+
+    93% {
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes zoom {
+
+    0% {
+        scale: 1;
+    }
+
+    15% {
+        scale: 1.03;
+
+    }
+
+    30% {
+        scale: 1.05;
+
+    }
+
+    45% {
+        scale: 1.1;
+    }
+
+    47% {
+        scale: 1;
+    }
+
+    100% {
+
+        scale: 1;
+    }
+
+
+}
+
+@keyframes zoom2 {
+
+    0% {
+        scale: 1;
+    }
+
+    15% {
+        scale: 1;
+
+    }
+
+    30% {
+        scale: 1;
+
+    }
+
+    45% {
+        scale: 1;
+    }
+
+    46% {
+        scale: 1;
+    }
+
+    47% {
+        scale: 1.03;
+
+    }
+
+    59% {
+        scale: 1.05;
+
+    }
+
+    69% {
+        scale: 1.08;
+
+    }
+
+    79% {
+        scale: 1.1;
+
+    }
+
+    95% {
+        scale: 1;
+
+    }
+
+    100% {
+
+        scale: 1;
+    }
+
+
+}
+
+
+
+@keyframes footer {
+
+    0% {
+        background-image: linear-gradient(140deg, gray 40%, black 40%);
+    }
+
+    20% {
+        background-image: linear-gradient(100deg, gray 40%, black 40%);
+
+    }
+
+    40% {
+        background-image: linear-gradient(180deg, gray 40%, black 40%);
+
+    }
+
+    60% {
+        background-image: linear-gradient(320deg, gray 40%, black 40%);
+
+    }
+
+    80% {
+        background-image: linear-gradient(240deg, gray 40%, black 40%);
+
+    }
+
+    98% {
+
+        background-image: linear-gradient(140deg, gray 40%, black 40%);
+
+    }
+
+    100% {
+
+        background-image: linear-gradient(140deg, gray 40%, black 40%);
+
+    }
+
+}
